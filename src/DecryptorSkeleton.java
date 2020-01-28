@@ -60,7 +60,7 @@ public class DecryptorSkeleton {
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
         for (i = 0; i < toDecrypt.length; i++) {
         	toDecrypt[i] = Integer.parseInt(toDecrypt[i],2);
-        }
+       }
       
     }
 
@@ -163,3 +163,4 @@ public class DecryptorSkeleton {
         return solution.toString();
     }
 }
+
