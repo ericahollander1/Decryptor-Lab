@@ -58,7 +58,10 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
+        for (i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i] = Integer.parseInt(toDecrypt[i],2);
+        }
+      
     }
 
 
