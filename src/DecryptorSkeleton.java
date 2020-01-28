@@ -159,7 +159,13 @@ public class DecryptorSkeleton {
 
         StringBuilder solution = new StringBuilder();
 
-        // TODO
+        arraySize = toDecript.length;
+        
+        for(int i = 0; i < arraySize; i++) {
+        	int newKey = toDecrypt[i];
+        	char letter = cypher.get(newKey);
+        	solution.append(letter);
+        }
 
         solution.append('!');
         return solution.toString();
