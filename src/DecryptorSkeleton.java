@@ -22,7 +22,7 @@ import java.util.HashMap;
  * Place your @author tags here.
  * @author First Last : netid@iastate.edu
  * @author ...
- * @author ...
+ * @author Grace Wigen : gwigen01@iastate.edu
  * @author ...
  */
 public class DecryptorSkeleton {
@@ -58,10 +58,7 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        for (i = 0; i < toDecrypt.length; i++) {
-        	toDecrypt[i] = Integer.parseInt(toDecrypt[i],2);
-        }
-      
+        // TODO
     }
 
 
@@ -79,8 +76,23 @@ public class DecryptorSkeleton {
      *
      * @param toDecrypt - The array to be decoded.
      */
-    public static void shiftArrayValues(int[] toDecrypt) {
-        // TODO
+    public static void shiftArrayValues(int[] toDecrypt) 
+    {
+    	for (int i  = 0, i < toDecrypt.length(), i++)
+    	{
+    		if (toDecrypt[i] % 3 == 0)
+    		{
+    			toDecrypt[i] -= 1;
+    		}
+    		else if (toDecrypt[i] % 3 == 1)
+    		{
+    			toDecrypt[i] -= 2;
+    		}
+    		else
+    		{
+    			toDecrypt[i] -= 3;
+    		}
+    	}
     }
 
 
